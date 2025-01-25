@@ -1,0 +1,118 @@
+/* General Styles */
+.footer {
+  background: #10182F;
+}
+
+.footerRow {
+  padding: 40px 0;
+}
+
+.footerCol h4 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.footerLinks {
+  margin-top: 20px;
+}
+
+.footerLinks li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footerLinks li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footerLinks li a:hover {
+  color: #fff;
+}
+
+.footerCol p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footerCol form {
+  display: flex;
+  gap: 5px;
+}
+
+.footerCol input {
+  padding: 7px 15px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #748906;
+  caret-color: #fff;
+  color: #fff;
+}
+
+.footerCol input::placeholder {
+  color: #ccc;
+}
+
+.footerCol form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  color: #10182F;
+  padding: 7px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.footerCol form button:hover {
+  background: #cecccc;
+}
+
+.icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.icons i {
+  color: #afb6c7;
+}
+
+.icons i:hover {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footerRow {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footerCol form {
+    display: block;
+  }
+
+  .footerCol form :where(input, button) {
+    width: 100%;
+  }
+
+  .footerCol form button {
+    margin: 10px 0 0 0;
+  }
+}

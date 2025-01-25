@@ -1,0 +1,136 @@
+.header {
+  height: 90vh;
+}
+
+.lifestyle{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/public/Images/background/610-2048x1365.jpg');
+}
+
+.travelling{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/public/Images/background/photo-1455225761879-2ed774963809-2048x1365.jpg');
+}
+
+.nature{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/public/Images/background/622-2048x1365.jpg');
+}
+
+.food{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/public/Images/background/438.jpg');
+}
+
+.header-content{
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  max-width: 700px;
+  padding: 25px;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  z-index: 1;
+}
+
+.category-name{
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.header-h2{
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: -0.22px;
+  line-height: 1.3;
+  margin: 12px 0 5px 0;
+  color: #fff;
+}
+
+.underline-span{
+  display: block;
+  width: 28px;
+  border-bottom: 2px solid #fff;
+  margin: 25px auto 0;
+}
+
+.header-btn{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .2em;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/* Custom arrows styles */
+.slick-arrow {
+  border: 2px solid #fff; 
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Position the left arrow */
+.slick-prev {
+  left: 10px;
+}
+
+/* Position the right arrow */
+.slick-next {
+  right: 10px;
+}
+
+/* Remove the default arrow icon */
+.slick-prev:before, .slick-next:before {
+  content: none;
+}
+
+/* Custom icon styles */
+.slick-prev i, .slick-next i {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Hover effect for arrows */
+.slick-arrow:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.slick-prev:hover i, .slick-next:hover i {
+  color: #000; 
+}  

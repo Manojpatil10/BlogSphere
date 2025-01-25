@@ -1,0 +1,214 @@
+/* Navbar Styles */
+.nav {
+  background-color: #10182F;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.topLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #748906;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #ddd;
+}
+
+.topCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.topList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topListItem {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.topListItem:hover {
+  color: #748906;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.separator {
+  color: #fff;
+  font-weight: 500;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+.userMenu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userName {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 130%;
+  right: 0px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdownLink {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdownLink:hover {
+  background-color: #10182f;
+  color: #fff;
+}
+
+/* Display the dropdown when isDropdownOpen is true */
+.userMenu .dropdown {
+  display: block;
+}
+
+
+/* Search Input Styles */
+.searchContainer {
+  position: relative;
+}
+
+.searchInput {
+  display: block;
+  width: 200px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #748906;
+  border-radius: 5px;
+  margin-left: 10px;
+  outline: none;
+  transition: width 0.3s ease;
+  background: #fff;
+}
+
+.searchInput:focus {
+  box-shadow: none;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.topSearchIcon:hover {
+  color: #748906;
+}
+
+/* Hover Effects */
+.topIcon {
+  font-size: 20px;
+  color: #bfbfbf;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.topIcon:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topCenter {
+    margin-top: 10px;
+  }
+
+  .topList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .topRight {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .searchInput {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .topSearchIcon {
+    font-size: 24px;
+  }
+}

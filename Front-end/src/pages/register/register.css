@@ -1,0 +1,115 @@
+/* Register Container */
+.register {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px;
+}
+
+/* Title */
+.registerTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styling */
+.registerForm {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registerForm > label {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.registerInput {
+  padding: 12px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.registerInput:focus {
+  outline: none;
+  border-color: teal;
+}
+
+/* Buttons */
+.registerButton {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #005757;
+}
+
+.registerLoginButton {
+  text-decoration: none;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.registerLoginButton:hover {
+  background-color: darkred;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .registerForm {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .registerTitle {
+    font-size: 2rem;
+  }
+
+  .registerLoginButton {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
